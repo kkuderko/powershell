@@ -1,0 +1,2 @@
+# download all o365 user profile photos
+get-mailbox | Where {$_.HasPicture -eq $True} | % {Get-UserPhoto $_.identity} | % {Set-Content -path "C:\temp\$($_.identity).jpg" -value $_.picturedata -Encoding byte}
