@@ -1,2 +1,2 @@
 # powershell
-Set of handy PowerShell scripts
+Set of handy PowerShell scripts for everyday admin
